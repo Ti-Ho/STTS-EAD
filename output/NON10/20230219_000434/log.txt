@@ -1,0 +1,190 @@
+INFO -> 2023-02-19 00:04:34,873: {'dataset': 'NON10', 'del_epidemic': False, 'val_split': 0.1, 'shuffle_dataset': True, 'window_size': 20, 'batch_size': 128, 'temporal_embedding_dim': 32, 'spatial_embedding_dim': 32, 'TopK': 64, 'GATv2': True, 'out_dim': 1, 'lr': 0.0005, 'epochs': 65, 'use_cuda': True, 'print_per_epoch': 1, 'process_anomalies': True, 'recons_decay': 1, 'detect_per_epoch': 10, 'threshold_type': 'Nonparametric', 'init_threshold': 4.0, 'threshold_decay': 0.8, 'fill_data_type': 'season_mean_4', 'score_ratio': 0.5, 'score_scale': True}
+INFO -> 2023-02-19 00:04:34,980: ########## Data_Std: 1.8897602433359648 ##########
+INFO -> 2023-02-19 00:07:06,687: Init total train loss: 10.908494639817274, evaluating done in 136.69614934921265s
+INFO -> 2023-02-19 00:07:17,894: Init total val loss: 11.040368172566799, evaluating done in 11.20582389831543s
+INFO -> 2023-02-19 00:07:17,894: -- Starting Training model for 65 epochs --
+INFO -> 2023-02-19 00:11:26,076: -- save model to output/NON10/20230219_000434/model.pt --
+INFO -> 2023-02-19 00:11:26,136: [Epoch 1] forecast_loss = 1.26773, recon_loss = 1.51159, total_loss = 2.77931 ---- val_forecast_loss = 0.98891, val_rmse = 0.9895271325840983, val_mae = 0.6767649725125068, recon_loss = 1.51159, total_loss = 2.77931 [248.2s]
+INFO -> 2023-02-19 00:11:51,537: test_rmse: 1.0653071111564718, test_mae: 0.7249893541776506
+INFO -> 2023-02-19 00:11:51,537: -- Predicting and calculating anomaly scores --
+INFO -> 2023-02-19 00:17:07,665: ########## Score_df_Std: 1.2965240586598943 ##########
+INFO -> 2023-02-19 00:17:09,168: ########## Threshold: 0.16090709704460573 ##########
+INFO -> 2023-02-19 00:17:09,176: -- save anomalies result to output/NON10/20230219_000434/anomalies_epoch0.csv --
+INFO -> 2023-02-19 00:17:09,322: ########## Data Std: 1.8741503609786918 ##########
+INFO -> 2023-02-19 00:17:09,404: Detect and Replace 1318 anomalies, accounts for 0.33%, Dataloader has been updated
+INFO -> 2023-02-19 00:20:31,533: -- save model to output/NON10/20230219_000434/model.pt --
+INFO -> 2023-02-19 00:20:31,545: [Epoch 2] forecast_loss = 0.91966, recon_loss = 0.99632, total_loss = 1.91598 ---- val_forecast_loss = 0.97224, val_rmse = 0.972927112887768, val_mae = 0.6584261953296761, recon_loss = 0.99632, total_loss = 1.91598 [202.1s]
+INFO -> 2023-02-19 00:20:55,079: test_rmse: 1.0159818079183822, test_mae: 0.6899763785912087
+INFO -> 2023-02-19 00:24:28,064: -- save model to output/NON10/20230219_000434/model.pt --
+INFO -> 2023-02-19 00:24:28,078: [Epoch 3] forecast_loss = 0.87833, recon_loss = 0.75636, total_loss = 1.63468 ---- val_forecast_loss = 0.96188, val_rmse = 0.9625183341626388, val_mae = 0.6578360940822296, recon_loss = 0.75636, total_loss = 1.63468 [213.0s]
+INFO -> 2023-02-19 00:24:51,164: test_rmse: 0.9779356187077194, test_mae: 0.6704156403098847
+INFO -> 2023-02-19 00:28:06,022: -- save model to output/NON10/20230219_000434/model.pt --
+INFO -> 2023-02-19 00:28:06,033: [Epoch 4] forecast_loss = 0.85865, recon_loss = 0.65366, total_loss = 1.51231 ---- val_forecast_loss = 0.94130, val_rmse = 0.9419365648948689, val_mae = 0.6400013158809807, recon_loss = 0.65366, total_loss = 1.51231 [194.9s]
+INFO -> 2023-02-19 00:28:26,498: test_rmse: 0.9749649214519642, test_mae: 0.6632101519769966
+INFO -> 2023-02-19 00:31:28,916: [Epoch 5] forecast_loss = 0.84563, recon_loss = 0.59249, total_loss = 1.43812 ---- val_forecast_loss = 0.97529, val_rmse = 0.9758796574611407, val_mae = 0.6791945880220996, recon_loss = 0.59249, total_loss = 1.43812 [182.4s]
+INFO -> 2023-02-19 00:31:49,318: test_rmse: 0.9699760863997378, test_mae: 0.6792872785106983
+INFO -> 2023-02-19 00:34:45,447: -- save model to output/NON10/20230219_000434/model.pt --
+INFO -> 2023-02-19 00:34:45,456: [Epoch 6] forecast_loss = 0.83559, recon_loss = 0.55492, total_loss = 1.39051 ---- val_forecast_loss = 0.93788, val_rmse = 0.9384715578195665, val_mae = 0.631954542864114, recon_loss = 0.55492, total_loss = 1.39051 [176.1s]
+INFO -> 2023-02-19 00:35:05,768: test_rmse: 0.9556047042444074, test_mae: 0.6506288772369622
+INFO -> 2023-02-19 00:38:01,934: -- save model to output/NON10/20230219_000434/model.pt --
+INFO -> 2023-02-19 00:38:01,945: [Epoch 7] forecast_loss = 0.82986, recon_loss = 0.52554, total_loss = 1.35540 ---- val_forecast_loss = 0.92468, val_rmse = 0.9253003701372978, val_mae = 0.6216764699688389, recon_loss = 0.52554, total_loss = 1.35540 [176.2s]
+INFO -> 2023-02-19 00:38:22,577: test_rmse: 0.9556030994714765, test_mae: 0.6438719410666196
+INFO -> 2023-02-19 00:41:18,663: [Epoch 8] forecast_loss = 0.82496, recon_loss = 0.50282, total_loss = 1.32778 ---- val_forecast_loss = 0.93767, val_rmse = 0.9382961360085015, val_mae = 0.6284539746058484, recon_loss = 0.50282, total_loss = 1.32778 [176.1s]
+INFO -> 2023-02-19 00:41:39,269: test_rmse: 0.9547189096500207, test_mae: 0.646391673773777
+INFO -> 2023-02-19 00:44:42,150: [Epoch 9] forecast_loss = 0.81958, recon_loss = 0.48313, total_loss = 1.30271 ---- val_forecast_loss = 0.94377, val_rmse = 0.9444066125592414, val_mae = 0.6329741796118518, recon_loss = 0.48313, total_loss = 1.30271 [182.9s]
+INFO -> 2023-02-19 00:45:02,658: test_rmse: 0.9602648561736221, test_mae: 0.6490609259037301
+INFO -> 2023-02-19 00:47:58,954: [Epoch 10] forecast_loss = 0.81527, recon_loss = 0.46430, total_loss = 1.27958 ---- val_forecast_loss = 0.93438, val_rmse = 0.934995611804308, val_mae = 0.6317023907390733, recon_loss = 0.46430, total_loss = 1.27958 [176.3s]
+INFO -> 2023-02-19 00:48:19,230: test_rmse: 0.9493949791296129, test_mae: 0.6431303896281368
+INFO -> 2023-02-19 00:51:21,040: [Epoch 11] forecast_loss = 0.81179, recon_loss = 0.44546, total_loss = 1.25724 ---- val_forecast_loss = 0.95281, val_rmse = 0.9534637320999548, val_mae = 0.639050387546834, recon_loss = 0.44546, total_loss = 1.25724 [181.8s]
+INFO -> 2023-02-19 00:51:41,419: test_rmse: 0.9481320149360923, test_mae: 0.6418039620579334
+INFO -> 2023-02-19 00:51:41,421: -- Predicting and calculating anomaly scores --
+INFO -> 2023-02-19 00:55:59,035: ########## Score_df_Std: 1.416258046088275 ##########
+INFO -> 2023-02-19 00:56:00,314: ########## Threshold: 0.15827738308293982 ##########
+INFO -> 2023-02-19 00:56:00,319: -- save anomalies result to output/NON10/20230219_000434/anomalies_epoch10.csv --
+INFO -> 2023-02-19 00:56:00,414: ########## Data Std: 1.8660416909945963 ##########
+INFO -> 2023-02-19 00:56:00,502: Detect and Replace 1186 anomalies, accounts for 0.30%, Dataloader has been updated
+INFO -> 2023-02-19 00:59:01,225: [Epoch 12] forecast_loss = 0.79992, recon_loss = 0.42252, total_loss = 1.22244 ---- val_forecast_loss = 0.93737, val_rmse = 0.9379591024960582, val_mae = 0.6312523141788939, recon_loss = 0.42252, total_loss = 1.22244 [180.7s]
+INFO -> 2023-02-19 00:59:21,644: test_rmse: 0.9429728473751411, test_mae: 0.6393897233644228
+INFO -> 2023-02-19 01:02:19,666: [Epoch 13] forecast_loss = 0.79694, recon_loss = 0.40576, total_loss = 1.20270 ---- val_forecast_loss = 0.95538, val_rmse = 0.9559927873724584, val_mae = 0.6484934989723067, recon_loss = 0.40576, total_loss = 1.20270 [178.0s]
+INFO -> 2023-02-19 01:02:40,306: test_rmse: 0.9476451659011597, test_mae: 0.6484213648033896
+INFO -> 2023-02-19 01:05:36,517: [Epoch 14] forecast_loss = 0.79280, recon_loss = 0.38843, total_loss = 1.18124 ---- val_forecast_loss = 0.93406, val_rmse = 0.9347147621677754, val_mae = 0.6275414128729867, recon_loss = 0.38843, total_loss = 1.18124 [176.2s]
+INFO -> 2023-02-19 01:05:57,161: test_rmse: 0.9449697651541595, test_mae: 0.6394401000849675
+INFO -> 2023-02-19 01:08:54,182: [Epoch 15] forecast_loss = 0.79171, recon_loss = 0.37228, total_loss = 1.16399 ---- val_forecast_loss = 0.94661, val_rmse = 0.947212762381182, val_mae = 0.6561677004823254, recon_loss = 0.37228, total_loss = 1.16399 [177.0s]
+INFO -> 2023-02-19 01:09:14,794: test_rmse: 0.9523221088375362, test_mae: 0.6594396973236623
+INFO -> 2023-02-19 01:12:15,279: -- save model to output/NON10/20230219_000434/model.pt --
+INFO -> 2023-02-19 01:12:15,292: [Epoch 16] forecast_loss = 0.78862, recon_loss = 0.35852, total_loss = 1.14714 ---- val_forecast_loss = 0.91840, val_rmse = 0.9190798495736123, val_mae = 0.6182206364700363, recon_loss = 0.35852, total_loss = 1.14714 [180.5s]
+INFO -> 2023-02-19 01:12:35,680: test_rmse: 0.9422386503815999, test_mae: 0.6409395598698998
+INFO -> 2023-02-19 01:15:38,859: [Epoch 17] forecast_loss = 0.78792, recon_loss = 0.34546, total_loss = 1.13339 ---- val_forecast_loss = 0.94481, val_rmse = 0.9454834431789617, val_mae = 0.6278666177321639, recon_loss = 0.34546, total_loss = 1.13339 [183.2s]
+INFO -> 2023-02-19 01:16:00,428: test_rmse: 0.9723218437940442, test_mae: 0.6497800432295289
+INFO -> 2023-02-19 01:18:58,342: [Epoch 18] forecast_loss = 0.78584, recon_loss = 0.33250, total_loss = 1.11834 ---- val_forecast_loss = 0.93110, val_rmse = 0.9317149949308771, val_mae = 0.6221245854426589, recon_loss = 0.33250, total_loss = 1.11834 [177.9s]
+INFO -> 2023-02-19 01:19:18,736: test_rmse: 0.964145625091697, test_mae: 0.6484420659502786
+INFO -> 2023-02-19 01:22:16,093: -- save model to output/NON10/20230219_000434/model.pt --
+INFO -> 2023-02-19 01:22:16,102: [Epoch 19] forecast_loss = 0.78403, recon_loss = 0.32134, total_loss = 1.10537 ---- val_forecast_loss = 0.90807, val_rmse = 0.9086702612371806, val_mae = 0.6117151107353469, recon_loss = 0.32134, total_loss = 1.10537 [177.4s]
+INFO -> 2023-02-19 01:22:36,778: test_rmse: 0.9343911225531865, test_mae: 0.6322147071738387
+INFO -> 2023-02-19 01:25:33,001: [Epoch 20] forecast_loss = 0.78067, recon_loss = 0.31093, total_loss = 1.09160 ---- val_forecast_loss = 0.92919, val_rmse = 0.929793999541482, val_mae = 0.6226797411835028, recon_loss = 0.31093, total_loss = 1.09160 [176.2s]
+INFO -> 2023-02-19 01:25:53,815: test_rmse: 0.9449034111271383, test_mae: 0.637700372060511
+INFO -> 2023-02-19 01:28:54,593: [Epoch 21] forecast_loss = 0.77988, recon_loss = 0.30115, total_loss = 1.08103 ---- val_forecast_loss = 0.92773, val_rmse = 0.9283843241843618, val_mae = 0.6228483501966628, recon_loss = 0.30115, total_loss = 1.08103 [180.8s]
+INFO -> 2023-02-19 01:29:15,663: test_rmse: 0.9446558783487526, test_mae: 0.6376672932482665
+INFO -> 2023-02-19 01:29:15,664: -- Predicting and calculating anomaly scores --
+INFO -> 2023-02-19 01:33:32,265: ########## Score_df_Std: 1.4159418414056975 ##########
+INFO -> 2023-02-19 01:33:33,531: ########## Threshold: 0.14821118656864246 ##########
+INFO -> 2023-02-19 01:33:33,536: -- save anomalies result to output/NON10/20230219_000434/anomalies_epoch20.csv --
+INFO -> 2023-02-19 01:33:33,621: ########## Data Std: 1.8584715399415175 ##########
+INFO -> 2023-02-19 01:33:33,682: Detect and Replace 1192 anomalies, accounts for 0.30%, Dataloader has been updated
+INFO -> 2023-02-19 01:36:30,167: [Epoch 22] forecast_loss = 0.77103, recon_loss = 0.28740, total_loss = 1.05844 ---- val_forecast_loss = 0.92863, val_rmse = 0.9292793795803074, val_mae = 0.6202030080751413, recon_loss = 0.28740, total_loss = 1.05844 [176.5s]
+INFO -> 2023-02-19 01:36:50,788: test_rmse: 0.9361099062099743, test_mae: 0.6327683907164624
+INFO -> 2023-02-19 01:39:46,864: [Epoch 23] forecast_loss = 0.76861, recon_loss = 0.27623, total_loss = 1.04484 ---- val_forecast_loss = 0.95172, val_rmse = 0.9523938099020945, val_mae = 0.6369433438260522, recon_loss = 0.27623, total_loss = 1.04484 [176.1s]
+INFO -> 2023-02-19 01:40:07,203: test_rmse: 0.9402315672068713, test_mae: 0.6396525108464198
+INFO -> 2023-02-19 01:43:04,375: [Epoch 24] forecast_loss = 0.76716, recon_loss = 0.26480, total_loss = 1.03197 ---- val_forecast_loss = 0.95337, val_rmse = 0.9540431539604536, val_mae = 0.6373411743603646, recon_loss = 0.26480, total_loss = 1.03197 [177.2s]
+INFO -> 2023-02-19 01:43:24,945: test_rmse: 0.955793339210532, test_mae: 0.6449713851234126
+INFO -> 2023-02-19 01:46:26,427: [Epoch 25] forecast_loss = 0.76711, recon_loss = 0.25319, total_loss = 1.02030 ---- val_forecast_loss = 0.94023, val_rmse = 0.9407961237925964, val_mae = 0.6462865225022866, recon_loss = 0.25319, total_loss = 1.02030 [181.5s]
+INFO -> 2023-02-19 01:46:47,060: test_rmse: 0.9394947610782746, test_mae: 0.6485574219327466
+INFO -> 2023-02-19 01:49:42,861: [Epoch 26] forecast_loss = 0.76919, recon_loss = 0.24405, total_loss = 1.01323 ---- val_forecast_loss = 0.92329, val_rmse = 0.9239262784353338, val_mae = 0.6194988916892972, recon_loss = 0.24405, total_loss = 1.01323 [175.8s]
+INFO -> 2023-02-19 01:50:03,178: test_rmse: 0.9492075327327043, test_mae: 0.6437797458526883
+INFO -> 2023-02-19 01:52:59,893: [Epoch 27] forecast_loss = 0.77062, recon_loss = 0.23204, total_loss = 1.00266 ---- val_forecast_loss = 0.93435, val_rmse = 0.9349815282177558, val_mae = 0.6216858138868379, recon_loss = 0.23204, total_loss = 1.00266 [176.7s]
+INFO -> 2023-02-19 01:53:20,185: test_rmse: 0.9541562988384457, test_mae: 0.6406904387211245
+INFO -> 2023-02-19 01:56:15,677: [Epoch 28] forecast_loss = 0.76853, recon_loss = 0.21298, total_loss = 0.98151 ---- val_forecast_loss = 0.95193, val_rmse = 0.9525971619438428, val_mae = 0.629229838669714, recon_loss = 0.21298, total_loss = 0.98151 [175.5s]
+INFO -> 2023-02-19 01:56:36,151: test_rmse: 0.9636754532851051, test_mae: 0.6469362624059317
+INFO -> 2023-02-19 01:59:36,834: [Epoch 29] forecast_loss = 0.76869, recon_loss = 0.18792, total_loss = 0.95661 ---- val_forecast_loss = 0.92296, val_rmse = 0.9235584483431128, val_mae = 0.620856020251496, recon_loss = 0.18792, total_loss = 0.95661 [180.7s]
+INFO -> 2023-02-19 01:59:57,562: test_rmse: 0.9348054616586539, test_mae: 0.6348628555615092
+INFO -> 2023-02-19 02:02:55,648: [Epoch 30] forecast_loss = 0.77098, recon_loss = 0.16616, total_loss = 0.93714 ---- val_forecast_loss = 0.93210, val_rmse = 0.9326892834334188, val_mae = 0.625068755487187, recon_loss = 0.16616, total_loss = 0.93714 [178.1s]
+INFO -> 2023-02-19 02:03:16,266: test_rmse: 0.9451272577735966, test_mae: 0.6366302835365939
+INFO -> 2023-02-19 02:06:12,295: [Epoch 31] forecast_loss = 0.77182, recon_loss = 0.14555, total_loss = 0.91737 ---- val_forecast_loss = 0.93143, val_rmse = 0.9320598407932845, val_mae = 0.6184905522925158, recon_loss = 0.14555, total_loss = 0.91737 [176.0s]
+INFO -> 2023-02-19 02:06:32,752: test_rmse: 0.947090622741958, test_mae: 0.6375323256965408
+INFO -> 2023-02-19 02:06:32,752: -- Predicting and calculating anomaly scores --
+INFO -> 2023-02-19 02:10:49,164: ########## Score_df_Std: 1.4045154831534794 ##########
+INFO -> 2023-02-19 02:10:50,427: ########## Threshold: 0.13636091335929929 ##########
+INFO -> 2023-02-19 02:10:50,434: -- save anomalies result to output/NON10/20230219_000434/anomalies_epoch30.csv --
+INFO -> 2023-02-19 02:10:50,512: ########## Data Std: 1.8507451029603998 ##########
+INFO -> 2023-02-19 02:10:50,571: Detect and Replace 1084 anomalies, accounts for 0.27%, Dataloader has been updated
+INFO -> 2023-02-19 02:13:48,261: [Epoch 32] forecast_loss = 0.76673, recon_loss = 0.13142, total_loss = 0.89815 ---- val_forecast_loss = 0.93063, val_rmse = 0.9312124810423732, val_mae = 0.62094418962424, recon_loss = 0.13142, total_loss = 0.89815 [177.7s]
+INFO -> 2023-02-19 02:14:11,019: test_rmse: 0.9440781567743667, test_mae: 0.636753898998836
+INFO -> 2023-02-19 02:17:08,157: [Epoch 33] forecast_loss = 0.76294, recon_loss = 0.12328, total_loss = 0.88622 ---- val_forecast_loss = 0.94225, val_rmse = 0.9428420958092822, val_mae = 0.6363600810894535, recon_loss = 0.12328, total_loss = 0.88622 [177.1s]
+INFO -> 2023-02-19 02:17:28,599: test_rmse: 0.9384849671001844, test_mae: 0.6404847386758094
+INFO -> 2023-02-19 02:20:24,793: [Epoch 34] forecast_loss = 0.76337, recon_loss = 0.11395, total_loss = 0.87733 ---- val_forecast_loss = 0.92899, val_rmse = 0.9296199325675988, val_mae = 0.6207211235625049, recon_loss = 0.11395, total_loss = 0.87733 [176.2s]
+INFO -> 2023-02-19 02:20:45,514: test_rmse: 0.9284754004340965, test_mae: 0.631775895269792
+INFO -> 2023-02-19 02:23:43,621: [Epoch 35] forecast_loss = 0.76389, recon_loss = 0.10905, total_loss = 0.87294 ---- val_forecast_loss = 0.96804, val_rmse = 0.9685591709100047, val_mae = 0.6738715097138451, recon_loss = 0.10905, total_loss = 0.87294 [178.1s]
+INFO -> 2023-02-19 02:24:04,312: test_rmse: 0.9442901693408666, test_mae: 0.6619237735924516
+INFO -> 2023-02-19 02:27:01,089: [Epoch 36] forecast_loss = 0.76114, recon_loss = 0.10512, total_loss = 0.86626 ---- val_forecast_loss = 0.92662, val_rmse = 0.927215194500696, val_mae = 0.6191362253638605, recon_loss = 0.10512, total_loss = 0.86626 [176.8s]
+INFO -> 2023-02-19 02:27:21,875: test_rmse: 0.9459716150311758, test_mae: 0.6417507324072237
+INFO -> 2023-02-19 02:30:22,407: [Epoch 37] forecast_loss = 0.76469, recon_loss = 0.10198, total_loss = 0.86667 ---- val_forecast_loss = 0.92686, val_rmse = 0.9274364031476046, val_mae = 0.6172595404680404, recon_loss = 0.10198, total_loss = 0.86667 [180.5s]
+INFO -> 2023-02-19 02:30:43,155: test_rmse: 0.9364870075815647, test_mae: 0.6347736571231948
+INFO -> 2023-02-19 02:33:38,946: [Epoch 38] forecast_loss = 0.75939, recon_loss = 0.09758, total_loss = 0.85697 ---- val_forecast_loss = 0.94339, val_rmse = 0.9440435979393963, val_mae = 0.6234926385991275, recon_loss = 0.09758, total_loss = 0.85697 [175.8s]
+INFO -> 2023-02-19 02:33:59,293: test_rmse: 0.9502353525612414, test_mae: 0.6404666213150386
+INFO -> 2023-02-19 02:36:55,299: [Epoch 39] forecast_loss = 0.75858, recon_loss = 0.09472, total_loss = 0.85330 ---- val_forecast_loss = 0.93703, val_rmse = 0.937659697764303, val_mae = 0.6231773188060357, recon_loss = 0.09472, total_loss = 0.85330 [176.0s]
+INFO -> 2023-02-19 02:37:15,784: test_rmse: 0.9300947448296679, test_mae: 0.6306066259024665
+INFO -> 2023-02-19 02:40:11,638: [Epoch 40] forecast_loss = 0.75877, recon_loss = 0.09109, total_loss = 0.84986 ---- val_forecast_loss = 0.93071, val_rmse = 0.9313476445072866, val_mae = 0.6182429150901735, recon_loss = 0.09109, total_loss = 0.84986 [175.9s]
+INFO -> 2023-02-19 02:40:32,173: test_rmse: 0.930144692783305, test_mae: 0.6283949358687486
+INFO -> 2023-02-19 02:43:27,998: [Epoch 41] forecast_loss = 0.75704, recon_loss = 0.09059, total_loss = 0.84763 ---- val_forecast_loss = 0.92923, val_rmse = 0.9298431560591787, val_mae = 0.616100845631212, recon_loss = 0.09059, total_loss = 0.84763 [175.8s]
+INFO -> 2023-02-19 02:43:49,828: test_rmse: 0.9404954325722007, test_mae: 0.6312940990405793
+INFO -> 2023-02-19 02:43:49,829: -- Predicting and calculating anomaly scores --
+INFO -> 2023-02-19 02:48:07,887: ########## Score_df_Std: 1.3992940474975264 ##########
+INFO -> 2023-02-19 02:48:09,091: ########## Threshold: 0.13407335691299838 ##########
+INFO -> 2023-02-19 02:48:09,096: -- save anomalies result to output/NON10/20230219_000434/anomalies_epoch40.csv --
+INFO -> 2023-02-19 02:48:09,160: ########## Data Std: 1.8441993242074735 ##########
+INFO -> 2023-02-19 02:48:09,221: Detect and Replace 904 anomalies, accounts for 0.23%, Dataloader has been updated
+INFO -> 2023-02-19 02:51:05,628: [Epoch 42] forecast_loss = 0.75602, recon_loss = 0.08707, total_loss = 0.84309 ---- val_forecast_loss = 0.93508, val_rmse = 0.9357212903846726, val_mae = 0.6199600537050929, recon_loss = 0.08707, total_loss = 0.84309 [176.4s]
+INFO -> 2023-02-19 02:51:26,347: test_rmse: 0.9447785816795513, test_mae: 0.6353092366615765
+INFO -> 2023-02-19 02:54:22,024: [Epoch 43] forecast_loss = 0.75390, recon_loss = 0.08538, total_loss = 0.83928 ---- val_forecast_loss = 0.95407, val_rmse = 0.954611875169112, val_mae = 0.6445738207279808, recon_loss = 0.08538, total_loss = 0.83928 [175.7s]
+INFO -> 2023-02-19 02:54:42,345: test_rmse: 0.9604433127304871, test_mae: 0.651880574091065
+INFO -> 2023-02-19 02:57:38,107: [Epoch 44] forecast_loss = 0.75218, recon_loss = 0.08335, total_loss = 0.83554 ---- val_forecast_loss = 0.93825, val_rmse = 0.9388611782557951, val_mae = 0.6241108643540906, recon_loss = 0.08335, total_loss = 0.83554 [175.8s]
+INFO -> 2023-02-19 02:57:58,537: test_rmse: 0.9365617857321901, test_mae: 0.6341533503553081
+INFO -> 2023-02-19 03:00:57,313: [Epoch 45] forecast_loss = 0.75385, recon_loss = 0.08278, total_loss = 0.83663 ---- val_forecast_loss = 0.95547, val_rmse = 0.9560775488163589, val_mae = 0.6430065613070296, recon_loss = 0.08278, total_loss = 0.83663 [178.8s]
+INFO -> 2023-02-19 03:01:17,468: test_rmse: 0.931713538956021, test_mae: 0.6379809994638285
+INFO -> 2023-02-19 03:04:12,958: [Epoch 46] forecast_loss = 0.75354, recon_loss = 0.08068, total_loss = 0.83423 ---- val_forecast_loss = 0.91818, val_rmse = 0.9187790218237358, val_mae = 0.6155418037271334, recon_loss = 0.08068, total_loss = 0.83423 [175.5s]
+INFO -> 2023-02-19 03:04:33,135: test_rmse: 0.934887576675184, test_mae: 0.6339428784486315
+INFO -> 2023-02-19 03:07:27,400: [Epoch 47] forecast_loss = 0.75153, recon_loss = 0.07992, total_loss = 0.83144 ---- val_forecast_loss = 0.93125, val_rmse = 0.9318632540149983, val_mae = 0.6170061166563796, recon_loss = 0.07992, total_loss = 0.83144 [174.3s]
+INFO -> 2023-02-19 03:07:47,853: test_rmse: 0.9333410327187489, test_mae: 0.6277687483252503
+INFO -> 2023-02-19 03:10:45,600: [Epoch 48] forecast_loss = 0.75269, recon_loss = 0.07825, total_loss = 0.83094 ---- val_forecast_loss = 0.95619, val_rmse = 0.9568566582706679, val_mae = 0.626674604203552, recon_loss = 0.07825, total_loss = 0.83094 [177.7s]
+INFO -> 2023-02-19 03:11:06,211: test_rmse: 0.9556016953985006, test_mae: 0.6411277968095525
+INFO -> 2023-02-19 03:14:06,247: [Epoch 49] forecast_loss = 0.74929, recon_loss = 0.07694, total_loss = 0.82623 ---- val_forecast_loss = 0.94304, val_rmse = 0.9436812942851056, val_mae = 0.623505561546733, recon_loss = 0.07694, total_loss = 0.82623 [180.0s]
+INFO -> 2023-02-19 03:14:26,805: test_rmse: 0.9319432945546428, test_mae: 0.6281190552746695
+INFO -> 2023-02-19 03:17:24,344: [Epoch 50] forecast_loss = 0.75098, recon_loss = 0.07623, total_loss = 0.82721 ---- val_forecast_loss = 0.93499, val_rmse = 0.9356097457339476, val_mae = 0.6215515545039542, recon_loss = 0.07623, total_loss = 0.82721 [177.5s]
+INFO -> 2023-02-19 03:17:44,754: test_rmse: 0.9405124497693662, test_mae: 0.6319307352972058
+INFO -> 2023-02-19 03:20:40,718: [Epoch 51] forecast_loss = 0.75052, recon_loss = 0.07563, total_loss = 0.82615 ---- val_forecast_loss = 0.92765, val_rmse = 0.928243469222984, val_mae = 0.6176456188406382, recon_loss = 0.07563, total_loss = 0.82615 [176.0s]
+INFO -> 2023-02-19 03:21:01,150: test_rmse: 0.961310283921046, test_mae: 0.6501476644966978
+INFO -> 2023-02-19 03:21:01,151: -- Predicting and calculating anomaly scores --
+INFO -> 2023-02-19 03:25:17,015: ########## Score_df_Std: 1.385477119019279 ##########
+INFO -> 2023-02-19 03:25:18,204: ########## Threshold: 0.12657755614423685 ##########
+INFO -> 2023-02-19 03:25:18,209: -- save anomalies result to output/NON10/20230219_000434/anomalies_epoch50.csv --
+INFO -> 2023-02-19 03:25:18,273: ########## Data Std: 1.837557787567352 ##########
+INFO -> 2023-02-19 03:25:18,346: Detect and Replace 929 anomalies, accounts for 0.23%, Dataloader has been updated
+INFO -> 2023-02-19 03:28:12,524: [Epoch 52] forecast_loss = 0.74604, recon_loss = 0.07417, total_loss = 0.82021 ---- val_forecast_loss = 0.93855, val_rmse = 0.9391981301258613, val_mae = 0.6252630216938754, recon_loss = 0.07417, total_loss = 0.82021 [174.2s]
+INFO -> 2023-02-19 03:28:33,060: test_rmse: 0.934837772035039, test_mae: 0.6322229131415441
+INFO -> 2023-02-19 03:31:32,007: [Epoch 53] forecast_loss = 0.74507, recon_loss = 0.07309, total_loss = 0.81816 ---- val_forecast_loss = 0.95754, val_rmse = 0.9581691758572237, val_mae = 0.6424894007936948, recon_loss = 0.07309, total_loss = 0.81816 [178.9s]
+INFO -> 2023-02-19 03:31:52,375: test_rmse: 0.9393714714217004, test_mae: 0.637152101714323
+INFO -> 2023-02-19 03:34:48,697: [Epoch 54] forecast_loss = 0.74514, recon_loss = 0.07255, total_loss = 0.81769 ---- val_forecast_loss = 0.93059, val_rmse = 0.9312034841375059, val_mae = 0.6203680087555614, recon_loss = 0.07255, total_loss = 0.81769 [176.3s]
+INFO -> 2023-02-19 03:35:09,118: test_rmse: 0.9348286420365247, test_mae: 0.6309821190113293
+INFO -> 2023-02-19 03:38:05,907: [Epoch 55] forecast_loss = 0.74493, recon_loss = 0.07108, total_loss = 0.81601 ---- val_forecast_loss = 0.93999, val_rmse = 0.9406005115164192, val_mae = 0.6370384656815893, recon_loss = 0.07108, total_loss = 0.81601 [176.8s]
+INFO -> 2023-02-19 03:38:26,181: test_rmse: 0.9470760390358216, test_mae: 0.6423111132113263
+INFO -> 2023-02-19 03:41:18,558: [Epoch 56] forecast_loss = 0.74456, recon_loss = 0.07128, total_loss = 0.81585 ---- val_forecast_loss = 0.93265, val_rmse = 0.933294661109844, val_mae = 0.6260326620303094, recon_loss = 0.07128, total_loss = 0.81585 [172.4s]
+INFO -> 2023-02-19 03:41:38,514: test_rmse: 0.9375735702410372, test_mae: 0.6351761573911758
+INFO -> 2023-02-19 03:44:36,215: [Epoch 57] forecast_loss = 0.74242, recon_loss = 0.07122, total_loss = 0.81365 ---- val_forecast_loss = 0.96995, val_rmse = 0.9706619505695212, val_mae = 0.638133977200836, recon_loss = 0.07122, total_loss = 0.81365 [177.7s]
+INFO -> 2023-02-19 03:44:56,527: test_rmse: 0.9503908606323483, test_mae: 0.6377669878121147
+INFO -> 2023-02-19 03:47:52,526: [Epoch 58] forecast_loss = 0.74275, recon_loss = 0.07012, total_loss = 0.81287 ---- val_forecast_loss = 0.92636, val_rmse = 0.926990098897356, val_mae = 0.6151856910102069, recon_loss = 0.07012, total_loss = 0.81287 [176.0s]
+INFO -> 2023-02-19 03:48:12,790: test_rmse: 0.9437680522693507, test_mae: 0.6350001915130628
+INFO -> 2023-02-19 03:51:10,002: [Epoch 59] forecast_loss = 0.74267, recon_loss = 0.06909, total_loss = 0.81176 ---- val_forecast_loss = 0.93172, val_rmse = 0.9323207891961316, val_mae = 0.619077929234753, recon_loss = 0.06909, total_loss = 0.81176 [177.2s]
+INFO -> 2023-02-19 03:51:30,747: test_rmse: 0.9314968861078777, test_mae: 0.6277168457347037
+INFO -> 2023-02-19 03:54:26,796: [Epoch 60] forecast_loss = 0.74039, recon_loss = 0.06775, total_loss = 0.80814 ---- val_forecast_loss = 0.92518, val_rmse = 0.925803482887219, val_mae = 0.6161563562183744, recon_loss = 0.06775, total_loss = 0.80814 [176.0s]
+INFO -> 2023-02-19 03:54:47,085: test_rmse: 0.9432128483475744, test_mae: 0.6338353550916356
+INFO -> 2023-02-19 03:57:42,163: [Epoch 61] forecast_loss = 0.74012, recon_loss = 0.06719, total_loss = 0.80730 ---- val_forecast_loss = 0.92221, val_rmse = 0.9228054382273305, val_mae = 0.6116897480251888, recon_loss = 0.06719, total_loss = 0.80730 [175.1s]
+INFO -> 2023-02-19 03:58:02,609: test_rmse: 0.9340048559023016, test_mae: 0.628745186143055
+INFO -> 2023-02-19 03:58:02,610: -- Predicting and calculating anomaly scores --
+INFO -> 2023-02-19 04:02:25,626: ########## Score_df_Std: 1.39289041150379 ##########
+INFO -> 2023-02-19 04:02:26,758: ########## Threshold: 0.1294324747833315 ##########
+INFO -> 2023-02-19 04:02:26,765: -- save anomalies result to output/NON10/20230219_000434/anomalies_epoch60.csv --
+INFO -> 2023-02-19 04:02:26,831: ########## Data Std: 1.8316040956182371 ##########
+INFO -> 2023-02-19 04:02:26,893: Detect and Replace 961 anomalies, accounts for 0.24%, Dataloader has been updated
+INFO -> 2023-02-19 04:05:22,829: [Epoch 62] forecast_loss = 0.73937, recon_loss = 0.06760, total_loss = 0.80697 ---- val_forecast_loss = 0.93432, val_rmse = 0.9349603242285458, val_mae = 0.6224304000764257, recon_loss = 0.06760, total_loss = 0.80697 [175.9s]
+INFO -> 2023-02-19 04:05:43,084: test_rmse: 0.9354856558631951, test_mae: 0.6313323450785175
+INFO -> 2023-02-19 04:08:38,257: [Epoch 63] forecast_loss = 0.73878, recon_loss = 0.06661, total_loss = 0.80540 ---- val_forecast_loss = 0.94307, val_rmse = 0.9437067551015179, val_mae = 0.6372184332638151, recon_loss = 0.06661, total_loss = 0.80540 [175.2s]
+INFO -> 2023-02-19 04:08:58,487: test_rmse: 0.9409769441099818, test_mae: 0.6372523929497409
+INFO -> 2023-02-19 04:11:54,225: [Epoch 64] forecast_loss = 0.73814, recon_loss = 0.06538, total_loss = 0.80351 ---- val_forecast_loss = 0.94512, val_rmse = 0.9458008887839836, val_mae = 0.6301409661865068, recon_loss = 0.06538, total_loss = 0.80351 [175.7s]
+INFO -> 2023-02-19 04:12:14,664: test_rmse: 0.9421426960426993, test_mae: 0.6339963927464105
+INFO -> 2023-02-19 04:15:12,960: [Epoch 65] forecast_loss = 0.73821, recon_loss = 0.06500, total_loss = 0.80321 ---- val_forecast_loss = 0.93479, val_rmse = 0.9354162711262979, val_mae = 0.6340339567723373, recon_loss = 0.06500, total_loss = 0.80321 [178.3s]
+INFO -> 2023-02-19 04:15:34,061: test_rmse: 0.9491947003942018, test_mae: 0.6436234959639018
+INFO -> 2023-02-19 04:15:34,113: -- Training done in 14896.21926164627s.
+INFO -> 2023-02-19 04:15:34,125: test_size: 82000
+INFO -> 2023-02-19 04:15:54,558: Test forecast loss: 0.94909
+INFO -> 2023-02-19 04:15:54,558: Test rmse£º 0.94919
+INFO -> 2023-02-19 04:15:54,580: Test mae£º 0.64362
